@@ -32,6 +32,9 @@ dependencies {
     //For some fake dataz
     implementation 'com.github.moove-it:fakeit:v0.4'
 
+    //Reflextion for class names
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
     implementation "com.android.support:appcompat-v7:$support_version"
     implementation "com.android.support:recyclerview-v7:$support_version"
 

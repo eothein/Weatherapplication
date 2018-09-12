@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 The Network Security Configuration lets apps customize their network security settings through
 a declarative configuration file. The entire configuration is contained within this XML f
@@ -13,8 +14,6 @@ Certificate pinning: Restrict secure connections to particular certificates.
 See: [This code lab](https://codelabs.developers.google.com/codelabs/android-network-security-config/index.html#3)
 
 -->
-
-<?xml version="1.0" encoding="utf-8"?>
 <network-security-config xmlns:android="http://schemas.android.com/apk/res/android">
     <base-config cleartextTrafficPermitted="true">
 
