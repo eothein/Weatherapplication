@@ -8,6 +8,7 @@ import be.equality.weather.R
 import be.equality.weather.adapters.ForecastListadapter
 import com.mooveit.library.Fakeit
 import org.jetbrains.anko.find
+import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         val forecastList : RecyclerView = find(R.id.forecast_list)
         forecastList.layoutManager = LinearLayoutManager(this)
         forecastList.adapter = ForecastListadapter(list)
-
+        toast("Welcome to the application")
     }
 
 }
