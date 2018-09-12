@@ -1,0 +1,22 @@
+<!--
+The Network Security Configuration lets apps customize their network security settings through
+a declarative configuration file. The entire configuration is contained within this XML f
+ile, and no code changes are required.
+
+It allows for the configuration of the following:
+
+Cleartext traffic opt-out: Disable cleartext traffic.
+Custom trust anchors: Specify Certificate Authorities and sources that the app trusts.
+Debug-only overrides: Safely debug secure connections without affecting release builds.
+Certificate pinning: Restrict secure connections to particular certificates.
+
+See: [This code lab](https://codelabs.developers.google.com/codelabs/android-network-security-config/index.html#3)
+
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <base-config cleartextTrafficPermitted="true">
+
+    </base-config>
+</network-security-config>
