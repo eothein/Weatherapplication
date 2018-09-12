@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView
 import be.equality.weather.R
 import be.equality.weather.adapters.ForecastListadapter
 import com.mooveit.library.Fakeit
+import org.jetbrains.anko.find
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //as is the casting operator
-        val forecastList = findViewById(R.id.forecast_list) as RecyclerView
+        val forecastList : RecyclerView = find(R.id.forecast_list)
         forecastList.layoutManager = LinearLayoutManager(this)
         forecastList.adapter = ForecastListadapter(list)
 
